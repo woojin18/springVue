@@ -10,4 +10,9 @@ public class HomeController {
     public String index(){
         return "/index.html";
     }
+    @GetMapping("/test")
+    public String test(){
+        System.out.println("test!!");
+        return "test";
+    }
 }
